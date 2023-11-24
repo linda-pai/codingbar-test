@@ -9,8 +9,6 @@ const SearchPage = () => {
   const search = useLocation().search;
   const pageSize = new URLSearchParams(search).get("pageSize");
 
-  console.log("pageSize", pageSize);
-
   const [publicData, setPublicData] = React.useState(jsonData.public);
   const [organData, setOrganData] = React.useState(jsonData.organ);
 
